@@ -1,0 +1,10 @@
+package com.exapmle.beanLifeCycle.annotations;
+
+public class StudentDao {
+
+	private String Driver = "com.mysql.jdbc.Driver";
+	private String url = "jdbc:mysql://localhost:3306/student";
+	private String username = "root";
+	private String password = "root";
+	
+}

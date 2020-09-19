@@ -1,0 +1,17 @@
+package com.example.college;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class CollegeConfig {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+		System.out.println("Bean loaded");
+		
+		College college = context.getBean("collegeBean", College.class);
+		System.out.println("Object:- "+college);
+	}
+	
+}

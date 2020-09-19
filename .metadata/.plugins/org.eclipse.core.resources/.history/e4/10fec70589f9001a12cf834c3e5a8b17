@@ -1,0 +1,36 @@
+package com.example.college;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class College {
+	
+	@Autowired
+	private Principal principal;
+	
+	@Autowired
+	private Teacher teacher;
+
+//	College(Principal principal) {
+//		this.principal = principal;
+//	}
+	
+//	@Autowired
+//	public void setPrincipal(Principal principal) {
+//		this.principal = principal;
+//		System.out.println("using setter");
+//	}
+//
+//	@Autowired
+//	public void setTeacher(Teacher teacher) {
+//		this.teacher = teacher;
+//	}
+
+	public void test() {
+		System.out.println("Testing is done");
+		principal.principalInfo();
+		teacher.teach();
+	}
+	
+}

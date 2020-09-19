@@ -1,0 +1,15 @@
+package com.exapmle.diot;
+
+public class Student {
+
+	private Cheate cheat;
+	
+	public void setCheat(Cheate cheat) {
+		this.cheat = cheat;
+	}
+	
+	public void cheating() {
+		cheat.cheat();
+	}
+	
+}

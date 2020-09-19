@@ -1,0 +1,5 @@
+package com.exapmle.loadingValueFromPropFile;
+
+public class Student {
+
+}

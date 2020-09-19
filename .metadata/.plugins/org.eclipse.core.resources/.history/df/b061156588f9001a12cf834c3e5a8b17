@@ -1,0 +1,31 @@
+package com.example.college;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class College {
+	
+	private Principal principal;
+	
+	private Teacher teacher;
+
+//	College(Principal principal) {
+//		this.principal = principal;
+//	}
+	
+	public void setPrincipal(Principal principal) {
+		this.principal = principal;
+		System.out.println("using setter");
+	}
+
+	public void setTeacher(Teacher teacher) {
+		this.teacher = teacher;
+	}
+
+	public void test() {
+		System.out.println("Testing is done");
+		principal.principalInfo();
+		teacher.teach();
+	}
+	
+}

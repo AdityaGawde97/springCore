@@ -1,0 +1,11 @@
+package com.exapmle.diot;
+
+public class Student {
+
+	MathCheat mathCheat = new MathCheat();
+	
+	public void cheating() {
+		mathCheat.mathCheat();
+	}
+	
+}

@@ -1,0 +1,20 @@
+package com.exapmle.diot;
+
+public class Student {
+
+	MathCheat mathCheat;
+	private int id;
+	
+	public void setMathCheat(MathCheat mathCheat) {
+		this.mathCheat = mathCheat;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	public void cheating() {
+		mathCheat.mathCheat();
+	}
+	
+}

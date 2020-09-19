@@ -1,0 +1,23 @@
+package com.exapmle.loadingFromProperties;
+
+public class Student {
+
+	private String name;
+	private String course;
+	private String hobby;
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setCourse(String course) {
+		this.course = course;
+	}
+	public void setHobby(String hobby) {
+		this.hobby = hobby;
+	}
+	
+	
+	public void displayInfo() {
+		System.out.println("\nName:- "+name+"\nCourse:- "+course+"\nHobby:- "+hobby);
+	}
+}

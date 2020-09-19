@@ -1,0 +1,15 @@
+package com.exapmle.beanLifeCycle.annotations;
+
+import java.sql.SQLException;
+
+public class Test {
+
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+
+		StudentDao dao = new StudentDao();
+		dao.selectAllRow();
+		dao.deleteStundetRecord(5);
+
+	}
+
+}

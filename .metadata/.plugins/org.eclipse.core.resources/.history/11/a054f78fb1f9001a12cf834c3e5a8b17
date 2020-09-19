@@ -1,0 +1,5 @@
+package com.exapmle.beanLifeCycle.annotations;
+
+public class StudentDaoConfig {
+
+}

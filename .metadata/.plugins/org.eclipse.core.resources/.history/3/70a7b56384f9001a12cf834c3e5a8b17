@@ -1,0 +1,19 @@
+package com.example.college;
+
+//import org.springframework.stereotype.Component;
+
+//@Component("collegeBean")
+public class College {
+	
+	private Principal principal;
+
+	College(Principal principal) {
+		this.principal = principal;
+	}
+
+	public void test() {
+		System.out.println("Testing is done");
+		principal.principalInfo();
+	}
+	
+}

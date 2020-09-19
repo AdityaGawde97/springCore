@@ -1,0 +1,30 @@
+package com.exapmle.loadingFromProperties;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class Student {
+
+	private String name;
+	private String course;
+	private String hobby;
+	
+	@Value("Aditya")
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	@Value("React")
+	public void setCourse(String course) {
+		this.course = course;
+	}
+	
+	@Value("Singing")
+	public void setHobby(String hobby) {
+		this.hobby = hobby;
+	}
+	
+	
+	public void displayInfo() {
+		System.out.println("\nName:- "+name+"\nCourse:- "+course+"\nHobby:- "+hobby);
+	}
+}

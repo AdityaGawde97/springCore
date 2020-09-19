@@ -1,0 +1,9 @@
+package com.exapmle.diot;
+
+public class MathCheat {
+
+	public void cheat() {
+		System.out.println("Math cheat is started");
+	}
+	
+}

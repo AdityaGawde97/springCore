@@ -1,0 +1,15 @@
+package com.exapmle.diot;
+
+public class ScienceCheat {
+	
+	
+
+	private ScienceCheat() {
+		System.out.println("MathCheat Constructor loaded");
+	}
+
+	public void mathCheat() {
+		System.out.println("Math cheat is started");
+	}
+	
+}

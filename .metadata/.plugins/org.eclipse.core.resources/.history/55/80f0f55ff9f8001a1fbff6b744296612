@@ -1,0 +1,24 @@
+package com.example.autowired;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Human {
+
+	@Autowired
+	@Qualifier("octoHeart")
+	private Heart heart;
+
+	public void startPumping() {
+
+		if (heart != null) {
+			heart.pump();
+			System.out.println("Animal:- " + heart.getAnimal() );
+			System.out.println("No of Heart:- " + heart.getNoOfHeart());
+		} else {
+			System.out.println("You are dead");
+		}
+	}
+}
